@@ -1,5 +1,14 @@
 # decimaltime
 
+## What is it?
+It is a time measurement where 
+
+* A day has 10 hours
+* One hour has 100 minutes
+* one minute has 100 seconds
+
+like the frenchy guys once did. See [Wikipedia](https://en.wikipedia.org/wiki/Decimal_time).
+
 ## Before using
 
 Just make it executable: `chmod +x decimaltime`
