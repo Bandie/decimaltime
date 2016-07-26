@@ -19,7 +19,7 @@ Just make it executable: `chmod +x decimaltime`
 	./decimaltime
 
 ## Options
-Within the bash script you have the option to put decimal miliseconds behind it seperated by point, comma or what ever (as `LC\_NUMERIC` says).
+Within the bash script you have the option to put decimal miliseconds behind it seperated by point, comma or what ever (as `$LC_NUMERIC` says).
 To show it, switch `decimalplace=false` to `decimalplace=true`.
 
 
