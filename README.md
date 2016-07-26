@@ -1,1 +1,16 @@
 # decimaltime
+
+## Before using
+
+Just make it executable: `chmod +x decimaltime`
+
+## Usage
+
+	./decimaltime
+
+## Options
+Within the bash script you have the option to put decimal miliseconds behind it seperated by point, comma or what ever (as LC\_NUMERIC says).
+To show it, switch `decimalplace=false` to `decimalplace=true`.
+
+
+

@@ -1,0 +1,24 @@
+#!/bin/bash
+# Author: Bandie Yip Kojote
+# Licence: GNU-GPLv3
+# Year: 2016
+
+# Shows dh:dm:ds.dms if true
+decimalplace=false
+
+dm=$(awk --use-lc-numeric -v dp="$decimalplace" -v h="$(date +%k)" -v m="$(date +%M)" -v s="$(date +%S)" '
+BEGIN{ 
+t=( ( (h * 60 * 60)   +  (m * 60)  +  s ) / 0.864  );
+dh=int(t/10000); 
+dm=int((t-(dh*10000))/100); 
+ds=(t-(dh*10000)-(dm*100)); 
+if (dp=="true") {
+	printf("%d:%02d:%04.1f", dh, dm, ds); 
+}
+else {
+	printf("%d:%02d:%02d", dh, dm, ds);
+}
+}')
+
+
+echo -e "${dm}"
