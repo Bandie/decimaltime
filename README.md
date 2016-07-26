@@ -18,6 +18,12 @@ Just make it executable: `chmod +x decimaltime`
 
 	./decimaltime
 
+## Example
+
+	$ # Using decimaltime at 1:11:23 pm
+	$ ./decimaltime
+	5:49:57 
+
 ## Options
 Within the bash script you have the option to put decimal miliseconds behind it seperated by point, comma or what ever (as `$LC_NUMERIC` says).
 To show it, switch `decimalplace=false` to `decimalplace=true`.
